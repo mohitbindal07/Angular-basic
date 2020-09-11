@@ -1,0 +1,20 @@
+<section id="awards" class="section">
+  <h3 class="page-title white-text teal">
+    Awards
+  </h3>
+  <div class="container">
+      <div class="d-flex flex-row flex-wrap ">
+        <div class="flex-box col-sm-12 col-md-6" *ngFor="let award of awards">
+          <div class="card flex-box ">
+            <div class="card-content">
+              <p><span class="card-title"><a href="#" target="_blank" class="teal-text hoverline">{{award.Title}}</a></span></p>
+              <p class="brown-text">{{award.Date}}</p>
+              <ul>
+                <li>{{award.Description}}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>

@@ -1,0 +1,41 @@
+@import "../../styles/variables";
+
+$background-img: '../../../assets/one.jpg';
+
+.section {
+  background: url($background-img) center;
+  position: relative;
+  min-height: calc(100vh - 62px);
+
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .container {
+    color: white;
+    font-weight: 200;
+    left: 0;
+    position: absolute;
+    top: 0;
+
+    .teal {
+      background-color: $teal !important;
+    }
+
+    .underline {
+      border-bottom: 5px solid #009688;
+    }
+  }
+
+  &.container *:not(span) {
+    font-weight: 300;
+    line-height: 150%;
+    padding: 0 30px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  }
+}

@@ -1,0 +1,20 @@
+<section id="education" class="section">
+  <h3 class="page-title white-text teal">
+    Education
+  </h3>
+  <div class="container">
+      <div class="row">
+        <div class="col s12 m6" *ngFor="let school of education">
+          <div class="card">
+            <div class="card-content">
+              <p><span class="card-title"><a href="#" class="teal-text hoverline">{{school.Collage}}</a></span></p>
+              <p class="brown-text">{{school.Location}}</p>
+              <ul>
+                <li *ngFor="let item of school.Content">{{item.Description}}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
